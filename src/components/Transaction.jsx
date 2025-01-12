@@ -5,7 +5,7 @@ function Transaction({ transaction }) {
     const sign = transaction.ammount < 0 ? '-' : '+';
 
     return (
-        <li className="minus">
+        <li className={transaction.amount < 0 ? "minus" : "plus"}>
             {transaction.text} <span>{sign}${transaction.amount}</span><button className="delete-btn">x</button>
         </li>
     )
