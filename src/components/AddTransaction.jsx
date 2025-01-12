@@ -1,14 +1,29 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { GlobalContext } from '../context/GobalState'
 
 function AddTransaction() {
   
     const [text, setText] = useState('');
-    const [ammount, setAmmount] = useState(0)
+    const [amount, setamount] = useState(0);
+
+    const { addTransaction } = useContext(GlobalContext);
+
+    const onSubmit = e => {
+      e.preventDefault();
+
+      const newTransaction = {
+        id: Math.floor(Math.random() * 100000000),
+        text,
+        amount: +amount //turns amount into number
+      }
+
+      addTransaction(newTransaction);
+    }
 
     return (
     <>
       <h3>Add new transaction</h3>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">Text</label>
           <input type="text" placeholder="Enter text..." value={text} onChange={(e) => setText(e.target.value)} />
@@ -18,7 +33,7 @@ function AddTransaction() {
             >Amount <br />
             (negative - expense, positive - income)</label
           >
-          <input type="number" placeholder="Enter amount..." value={ammount} onChange={(e) => setAmmount(e.target.value)}/>
+          <input type="number" placeholder="Enter amount..." value={amount} onChange={(e) => setamount(e.target.value)}/>
         </div>
         <button className="btn">Add transaction</button>
       </form>
