@@ -4,11 +4,15 @@ import Transaction from './Transaction';
 
 function TransactionList() {
 
-    const { transactions } = useContext(GlobalContext);
+    const { transactions, clearTransactions } = useContext(GlobalContext);
+
     
     return (
         <>
-            <h3>History</h3>
+            <div className="transaction-list-header">
+                <h3>History</h3>
+                <button className="clear-transaction-list-btn" onClick={clearTransactions}>Clear</button>
+            </div>
             <ul className="list">
                 {transactions.map(transaction => (<Transaction key={transaction.id} transaction={transaction}/>))}
             </ul>
