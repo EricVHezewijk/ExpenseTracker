@@ -1,7 +1,6 @@
 # Expense Tracker
 
-Welcome to the Expense Tracker app! This simple web app helps you keep track of your finances by allowing you to add and remove transactions. Whether you're tracking income or expenses, this app gives you a clear overview of your balance, with the ability to see your total income, total expenses, and overall balance in real-time.
-
+Welcome to the Expense Tracker app! This simple web app helps you keep track of your finances by allowing you to add and remove transactions. Whether you're tracking income or expenses, this app gives you a clear overview of your balance, with the ability to see your total income, total expenses, and overall balance in real time.
 
 ### Key Features:
 
@@ -12,14 +11,14 @@ Welcome to the Expense Tracker app! This simple web app helps you keep track of 
 
 ### What I Learned:
 
-This project was a great way to freshen up on the basic of React while also gaining more familiarity with less explored concepts such as useReducer and useContext. I learned how to manage state in a more structured way using Context and Reducers, which is incredibly useful for handling shared data across multiple components. I also gained experience with handling forms in React, validating user input, and using methods like .map(), .reduce(), and .filter() to manipulate arrays efficiently.
+This project was a great way to freshen up on the basics of React while also gaining more familiarity with less explored concepts such as useReducer and useContext. I learned how to manage state in a more structured way using Context and Reducers, which is incredibly useful for handling shared data across multiple components. I also gained experience with handling forms in React, validating user input, and using methods like .map(), .reduce(), and .filter() to manipulate arrays efficiently.
 
-Throughout this project I also focused on my project layout, ensuring that it would remain scalable and organized throughout the development process. While this project is in a working state, I have plenty of additional features that I would love to implement, so keep an eye out!
+Throughout this project I also focused on my project layout, ensuring that it would remain scalable and organized throughout the development process. While this project is working, I have plenty of additional features that I would love to implement, so keep an eye out!
 
 ### Coming Soon:
 
-- User accounts, allowing data to be saved in a databse and persist throughout user sessions
-- Calendar tab to give an overview of weekly, monthly and yearly expenses
-- Ability to add recuring income and expenses
+- User accounts: allowing data to be saved in a database and persist throughout user sessions.
+- Calendar tab: provides an overview of weekly, monthly, and yearly expenses.
+- Recurring income and expenses.
 
-Feel free to clone the repository, add your own transactions, and track your expenses!
+Feel free to clone the repository, add your transactions, and track your expenses!
