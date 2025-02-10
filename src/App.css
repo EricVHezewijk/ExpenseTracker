@@ -23,16 +23,12 @@ body {
 .container {
   margin: 30px auto;
   width: 400px;
+  max-width: 80vw;
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
-}
-
-h3 {
-  /* border-bottom: 1px solid #bbb; */
-  /* padding-bottom: 10px; */
 }
 
 h4 {
